@@ -1,0 +1,8 @@
+create spring project with same lib 
+just add spring data jpa 
+
+create folders 
+add views folder 
+
+add tomcat embeded jasper 
+add all basic configuration that we have in spring 
