@@ -14,7 +14,7 @@ public class UserEntity {
 	private Integer userId;
 	private String firstName;
 	private String email;
-	private Integer password;// modify
+	private String password;// modify
 
 	public String getFirstName() {
 		return firstName;
@@ -40,20 +40,12 @@ public class UserEntity {
 		this.userId = userId;
 	}
 
-	public Integer getPassword() {
+	public String getPassword() {
 		return password;
 	}
 
-	public void setPassword(Integer password) {
+	public void setPassword(String password) {
 		this.password = password;
 	}
-
-//	public String getPassword() {
-//		return password;
-//	}
-//
-//	public void setPassword(String password) {
-//		this.password = password;
-//	}
 
 }
