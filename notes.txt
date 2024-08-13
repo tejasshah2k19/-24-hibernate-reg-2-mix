@@ -24,3 +24,61 @@ table -> entity -> course
 3) @Repository 
 				 
 --------------------------------------------------------------------------		 
+hibernate ->java ->  framework -> database -> SQL X 
+
+java -> core java -> hibernate { jar hibernate-core.jar }  
+		adv java -> hibernate { jar hibernate-core.jar }
+		spring -> hibernate   { spring starter spring-data-jap }
+		 
+
+spring project -> hibernate dep -> 
+						spring-data-jpa 
+								
+--------------------------------------------------------------------------
+Entity -> 
+table -> class -> entity -> create table 
+
+1) class 
+2) @Entity 
+3) @Table 
+4) variable 
+5) @Id  -> @GeneratedValue 
+
+-------------------------------------------------------------------------
+	
+insert delete update select where count -> sql 
+
+query -> 
+
+Repository -> 
+
+1) interface extends JpaRepository  
+2) JpaRepository<Entity,PkDataType>
+				<UserEntity,Integer>
+3) @Repository {optional} 
+				
+----------------------------------------------------------				 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
