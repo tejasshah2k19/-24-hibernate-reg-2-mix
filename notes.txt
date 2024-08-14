@@ -59,16 +59,62 @@ Repository ->
 				
 ----------------------------------------------------------				 
 
+Lombok => 
+	bean/entity 
+			private 
+			getter
+			setter 
+
+class UserEntity{
+
+	private String fn;
+	private String ln;
+	private String em;
+ 	
+	//getters
+	//setters 
+	//manual work 
+	
+	
+	//constructor 
+}
+
+@Getters
+@Setters
+@FiledDefault -> private 
+@AllContructor
+class ProductEntity{
+
+	id
+	name
+	price
+	category
+	productImage
+}
+
+
+0) one time ---->  configured lombok in STS 
+1) pom.xml -> lombok -> maven | spring starter 
+
+
+ProductEntity -> variable -> private -> getters 
+
+
+window -> show view -> outline 
 
 
 
-
-
-
-
-
-
-
+------------------------------------------------------------------
+how to configure lombok in STS ? 
+	lombok download -> https://projectlombok.org/download
+	above url will download lombok.jar 
+	now double click on that it will open some GUI 
+	once you got your GUI -> click on specify location button -> browse ->
+	STS -> green icon of sts -> click select -> 
+	now click on install/update button -> lombok says install successfull -> quit installer ->
+	
+	*******YOU MUST HAVE TO RESTART STS*********  
+------------------------------------------------------------------	
 
 
 
