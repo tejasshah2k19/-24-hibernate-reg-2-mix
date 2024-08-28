@@ -116,12 +116,39 @@ how to configure lombok in STS ?
 	*******YOU MUST HAVE TO RESTART STS*********  
 ------------------------------------------------------------------	
 
+validation -> data -> 
+	empty -> 
+		1)required 
+		2)length
+		3)regex 
+		 
+		
+	if(email == null || email.trim().length() == 0){
+	
+		isError = true;
+		set 
+	}
+	if(isError == true ){
+		return "Signup";
+	}else{
+		db insertion 
+	}
+
+
+spring + hibernate -> 
+		hibernate validator 
+		
+1) add validator jar 
+2) use annotation in entity class {@NotBlank } 
+3) use @Validated and BindingResult in controller 
+4) using hasErrors() method you can get idea for validation fail or not 
+5) print error message on jsp { DIY }
 
 
 
 
 
-
+------------------------------------------------
 
 
 
