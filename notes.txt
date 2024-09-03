@@ -149,6 +149,157 @@ spring + hibernate ->
 
 
 ------------------------------------------------
+users -> 
+userId:pk 
+firstName
+email
+password
+
+
+address  ->
+addressId
+addressline1
+addressline2
+city
+state
+pincode 
+userId:FK 
+
+hibernate? 
+
+Relation -> 
+	1 to 1  
+	1 to M
+	M to M
+		
+{employee:company}
+{category:product}
+{person:aadhar}
+{ passport - person }
+
+zomato -> 
+1:1 
+
+
+user 
+1	ved 
+
+
+cart
+cartid userid	productId 
+1		1 		10
+2		1		20
+ 
+ 
+3 example 
+1:1
+1:M
+M:M
+
+-------------------------------------------------------------------------------
+users
+userId	firstName email	password 
+
+
+
+cart
+cartId	productId:fk	userId:fk 
+
+1:1
+1:M
+M:1
+M:M
+
+
+
+user : cart 
+1	 : M 
+
+
+
+
+Relation -> 
+	1 to 1  =>	[user:pan,country:capital,user:user_profile,user:user_setting,restaurant:address,product:product_detail]
+	1 to M 	=>  [restaurant:menu,user:order,manufacture:car,]
+	M to M	=>  [project:employee,product:categories,movies:actors,student:course] 
+
+
+	1 to 1  =>	[user:pan,country:capital,user:user_profile,user:user_setting,restaurant:address,product:product_detail]
+	
+	user					pan 
+	userId:pk				panNum:pk , userId:FK 
+					
+	country					capital 
+	countryId				capitalId,countryId
+	
+	user					userProfile
+	userId					userProfileId:pk,userId:fk
+	
+						
+
+	1 to M 	=>  [restaurant:menu,user:order,manufacture:car,]
+
+	restaurant			menu
+	restaurantId:pk		menuId:pk,restaurantId
+	
+	user				order
+	userId:pk			orderId:pk,userId:fk 
+
+
+	payment						creditCard 
+	paymentId:pk,cardID:fk		creditCard:pk 
+	
+	
+	
+	
+	M to M	=>  [project:employee,product:categories,movies:actors,student:course] 
+
+	project					employee				project_employee
+	projectId:pk			employeeId:pk	  		project_employee_Id:pk	projectId:fk employeeId:fk 
+	1	facebook			1	jett		 
+	2	x					2	omen
+	3	wire				3	kj
+	4	logitech			 
+	
+	
+ 	facebook->kj omen 
+ 	wire -> omen jett
+ 	x -> kj omen jett 
+ 	
+
+------------------------------------------------------------------------------------------------------------
+
+1:1 
+
+citizen 			
+citizenId:PK firstname email 		
+
+
+pan 
+pannum address citizenid:FK
+
+
+
+1:M
+ 
+customer
+	customerId firstName gender 
+order 
+	orderId date customerId amount 
+	
+
+-----------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
 
 
 
