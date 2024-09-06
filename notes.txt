@@ -288,6 +288,12 @@ order
 	orderId date customerId amount 
 	
 
+1 customer -> n orders 
+1 order -> 1 customer 
+n orders -> 1 customer 
+
+
+ 1 to many -> 
 -----------------------------------------------------
 
 
