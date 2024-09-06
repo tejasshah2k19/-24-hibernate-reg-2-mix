@@ -296,9 +296,36 @@ n orders -> 1 customer
  1 to many -> 
 -----------------------------------------------------
 
+M to M	=>  [project:employee]
+	
+Employee 
+employeeId		firstName		
+1				ram			
+2				shyam
+3				ganshyam
+4				ravan
+
+project
+projectId	title	technology	 
+100			fb		MERN		 
+200			wa		MEAN
+300			gpt		Spring 
+	 
+project_employee 
+projectId 	employeeId 	 
 
 
+1->project -> Many
+1->employee-> Many 
 
+Many to Many 
+
+
+we need to create third table 
+
+-----------------------------------------------------------
+ 
+ 	 
 
 
 
