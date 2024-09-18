@@ -324,11 +324,27 @@ Many to Many
 we need to create third table 
 
 -----------------------------------------------------------
+
+cache : second level 
+polymorphic relationship 
+HQL : 
+	nativeQuery-> select * from users 
+	hql -> From UserEntity 
+	
+
+bulk operation - delete , update  , insert 
+
+named queries 
+criteria query
+Transactions management 
+EntityLifecycle*** 
+Lazy and Eager fetching*** 
+
  
- 	 
+backend--> 
 
 
-
+-----------------------------------------------------------
 
 
 
